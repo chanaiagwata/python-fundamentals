@@ -36,12 +36,23 @@
 
 # print(name)
 # print(age)
-print("What is your age?")
-age = int(input())
+# print("What is your age?")
+# age = int(input())
 
-print("What year were your born")
-birthyear = int(input())
+# print("What year were your born")
+# birthyear = int(input())
 
-print(age)
-print(birthyear)
-print(80+birthyear)
+# print(age)
+# print(birthyear)
+# print(80+birthyear)
+
+import sys
+print("Enter total bill")
+bill = int(input())
+
+print("if the service great enter 0.20, good enter 0.15, terrible enter 0")
+tipInput = float(input())
+tipValue = bill*tipInput
+
+totalBill = bill + tipValue
+print(totalBill)
