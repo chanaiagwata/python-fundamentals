@@ -20,39 +20,20 @@
 # circumference = 2*p*r
 # print(circumference)
 
-# print("what is your name")
-# name = input()
+# height = 66 #units in inches
+# if height>70:
+#         print("you are really tall")
+# elif height>60:
+#         print("you're average height")
+    
+# else:
+#         print("you are really short")
 
-# print("How old are you")
-# age = int(input())
+#Checking for nothing
+# An empty value is automatically considered to be False
+list_a = []
 
-# print(name)
-# print(age)
-
-# import sys
-# age = sys.argv[2]
-# name = sys.argv[1]
-
-
-# print(name)
-# print(age)
-# print("What is your age?")
-# age = int(input())
-
-# print("What year were your born")
-# birthyear = int(input())
-
-# print(age)
-# print(birthyear)
-# print(80+birthyear)
-
-import sys
-print("Enter total bill")
-bill = int(input())
-
-print("if the service great enter 0.20, good enter 0.15, terrible enter 0")
-tipInput = float(input())
-tipValue = bill*tipInput
-
-totalBill = bill + tipValue
-print(totalBill)
+if list_a:  #automatically evaluates to false beecause it is empty
+    print("I will not run")
+else:
+    print("I am empty")
