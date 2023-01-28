@@ -56,7 +56,54 @@
 # print(list_a)
 
 # the list() method converts it to a list
-for i in range(0,7):
-    print("I would love" + " " +str(i) +" " +"cookies")
+# for i in range(0,7):
+#     print(i)
 
 # the str() method converts i into a string to allow easy concatenation with the rest of the stringthe str() method converts i into a string to allow easy concatenation with the rest of the string
+
+# numbers = [1, 2, 3, 4, 5, 6]
+# for i in numbers:
+#     if i%2 ==0:
+#         print(i)
+# While loops
+# while loops are often used as counters
+#  
+# players = 11
+# player = list(int())
+
+# while players >=5 :
+#     print("The remaining number of players are", players)
+#     players -=1
+
+
+# for i in range(0,11):
+#     if i >=5:
+    
+#         print("The remaining number of players are", i)
+
+# numbers = 6
+
+# while True:
+#     numbers +=1
+#     if numbers == 25:
+#         break
+#     print (numbers)
+
+
+#  break statement
+
+# allows code to jump out of the loop after condition has been met
+
+# continue statement
+# Allows us to jump back into the loop
+
+# taken numbers
+numTaken = [3,5,7,11,13]
+
+print("Available numbers")
+
+#loop
+for i in range(0,20):
+    if i in numTaken:
+        continue
+    print(i)
