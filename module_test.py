@@ -98,12 +98,42 @@
 # Allows us to jump back into the loop
 
 # taken numbers
-numTaken = [3,5,7,11,13]
+# numTaken = [3,5,7,11,13]
 
-print("Available numbers")
+# print("Available numbers")
 
-#loop
-for i in range(0,20):
-    if i in numTaken:
-        continue
-    print(i)
+# #loop
+# for i in range(0,20):
+#     if i in numTaken:
+#         continue
+#     print(i)
+
+# players = 11
+# while players >=5:
+#     players -=1
+#     print(players)
+
+# lista = [10,2,-3,4,5]
+# listb = ['cat', 'dog']
+
+# # lista.extend(listb)
+# # lista.append("key")
+# # lista.reverse()
+# lista.sort()
+# print(lista)
+
+# birthdays = {"John":"August 1","Marcus":"April 8"}
+# birthdays["mary"] = "september, 24"
+# print(birthdays.values())
+
+print("Enter a string")
+
+input_string = input()
+
+characters = {}
+
+for character in input_string:
+    characters.setdefault(character,0)
+    characters[character] = characters[character] + 1
+
+print(characters)
