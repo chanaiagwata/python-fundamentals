@@ -23,6 +23,37 @@
 # list example
  
 # students = ["jane", "dan", "ken", "faith"]
+# teachers = ["Shie", "Kyla", "Jammy"]
+# students.extend(teachers)
+
+# print(students)
 
 # one_stud = students[1]
 # print(one_stud)
+
+# add items to dictionary
+# birthdays = {"John":"August 1","Marcus":"April 8"}
+# birthdays["mary"] = "June 9"
+
+# print(birthdays)
+# print(birthdays.values())
+
+# setdefault() method
+# When dealing with dictionaries, it is important to set placeholder values to keys before we do any operation to them to prevent unnecessary errors
+print("Enter a string")
+input_string = input()
+
+characters = {} #an empty dictionary that stores each individual character and how many times it has been used
+#setdefault
+
+for character in input_string:
+    characters.setdefault(character, 0)
+    characters[character] = characters[character]+1
+
+# used for loop to iterate through character in the input string
+#used setdefault() to create  a key for each character if the character does not exist in the dictionary
+# set default value for each character as 0
+# Lastly we target the key that matches the character and add 1 everytime the character is encountered
+print(characters)
+
+
