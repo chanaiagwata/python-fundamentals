@@ -194,3 +194,21 @@
 
 
 # print(describe([10, 2, 4, 7, 9, 3, 9, 8, 6, 7]))
+
+# Exceptions and Error Handling
+
+#Exception handling is a mechanism of stopping a normal program flow and continuing it at some surrounding code block
+# it is a method of spotting and handling errors
+
+def get_age():
+    print("How old are you?")
+
+    try:
+        age = int(input())
+        return age
+    except ValueError:
+        return "That was not a valid input"
+
+print(get_age())
+
+# we try/except to handle error
