@@ -79,7 +79,17 @@
 # slicing
 # getting parts /subsets of strings,lists, tuples
 
-greet = [3,6,4,7,5,32]
+# greet = [3,6,4,7,5,32]
 
-part_one = greet[0:3]
-print(part_one)
+# part_one = greet[0:3]
+# print(part_one)
+
+
+# stringcode = "PYTHONCODE"
+
+# print(stringcode[0:4])
+# print(stringcode[2:7])
+# print(stringcode[-7:-2])
+
+# print(stringcode[-1:-4:-1]) #slicing in the reverse direction, a third argument -1 must be added to indicate that the program is running in a reverse direction 
+# print(stringcode[-3:-7:-1])
