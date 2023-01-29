@@ -1,35 +1,4 @@
-# Tuples
-#They are like lists bu immutable-values cannot be changed once created
-# tuple_a = ('a', 'b', 'c', 'd')
-# tuple_b = (1,2,3,4,5)
-# tuple_c = (1, 'west', 34, 'long')
-# d = (1,2,3,4)
-# tuple_d = tuple(d)
-# print(tuple_d)
 
-# Dictionary
-# Empty dictionary
-# my_dict = {}
-
-#Dict with keys and values
-# my_cat = {
-#     'name': 'sniff',
-#     'age':10,
-#     'color':'black',
-# }
-# appearance = my_cat['color']
-# print(appearance)
-# instead of the index used in lists, for dictionaries we access values using their keys
-# list example
- 
-# students = ["jane", "dan", "ken", "faith"]
-# teachers = ["Shie", "Kyla", "Jammy"]
-# students.extend(teachers)
-
-# print(students)
-
-# one_stud = students[1]
-# print(one_stud)
 
 # add items to dictionary
 # birthdays = {"John":"August 1","Marcus":"April 8"}
@@ -55,37 +24,62 @@
 # Lastly we target the key that matches the character and add 1 everytime the character is encountered
 # print(characters)
 
-print("Enter text")
+# print("Enter text")
 
-input_text = input()
-characters = ["a", "b", "c", "e" "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r","s", "t", "u", "v", "w", "x", "y", "z"]
-pressOnce = ["a", "d", "g", "j", "m", "p", "t", "w"]
-pressTwice = ["b", "e", "h", "k", "n", "q", "u", "x"]
-pressThrice = ["c", "f", "i", "l", "o", "r", "v", "y"]
-pressFour = ["s", "z"]
+# input_text = input()
+# pressOnce = ["a", "d", "g", "j", "m", "p", "t", "w"]
+# pressTwice = ["b", "e", "h", "k", "n", "q", "u", "x"]
+# pressThrice = ["c", "f", "i", "l", "o", "r", "v", "y"]
+# pressFour = ["s", "z"]
 
-text = {}
-
+# text = {}
 
 
-for character in input_text:    
-    if character in pressOnce:
-        text.setdefault(character, 1)
-        continue
 
-    elif character in pressTwice:
-        text.setdefault(character, 2)
-        continue
+# for character in input_text:    
+#     if character in pressOnce:
+#         text.setdefault(character, 1)
+#         continue
 
-    elif character in pressThrice:
-        text.setdefault(character, 3)
-        continue
+#     elif character in pressTwice:
+#         text.setdefault(character, 2)
+#         continue
 
-    else:
-        text.setdefault(character, 4)
+#     elif character in pressThrice:
+#         text.setdefault(character, 3)
+#         continue
 
-print(sum(text.values()))
+#     else:
+#         text.setdefault(character, 4)
+
+# print(sum(text.values()))
 
 
-    
+# alpha = "Illk"
+# password = "K34jndnks"
+# number_string = "12345"
+# tabbs = "       "
+# titles = "I Love Cups"
+# false_titles = "I love Cups"
 
+# print( alpha.isalpha() )
+# print( password.isalnum() )
+# print( number_string.isdecimal() )   
+# print( tabbs.isspace() )
+# print( titles.istitle() )
+# print( false_titles.istitle() )
+
+# print("Enter a noun")
+# response = input()
+
+# print(f"I don\'t think anyone of us knows what {response} means")
+
+# Type Casting
+# is the act of converting one type of data to another so as to manipulate in some other way
+# slicing
+# getting parts /subsets of strings,lists, tuples
+
+greet = [3,6,4,7,5,32]
+
+part_one = greet[0:3]
+print(part_one)
