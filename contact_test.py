@@ -15,6 +15,12 @@ class TestContact(unittest.TestCase):
         '''
         self.new_contact = Contact("James", "Muriuki", "0742363001", "james@gmail.com") #creates a contact object
     
+    def tearDown(self):
+        '''
+        teardown method that does clean up after each test case has run
+        '''
+        Contact.contact_list = []
+    
     def test_init(self):
         '''
         test_init case to test if the objects is initialized properly
@@ -24,6 +30,27 @@ class TestContact(unittest.TestCase):
         self.assertEqual(self.new_contact.last_name, "Muriuki")
         self.assertEqual(self.new_contact.phone_number, "0742363001")
         self.assertEqual(self.new_contact.email, "james@gmail.com")
+
+    def test_save_contact(self):
+        '''
+        test_save_contact test case to test if the contact object is saved into the contact list
+        '''
+        self.new_contact.save_contact() # saving the new contact
+        self.assertEqual(len(Contact.contact_list),1)
+
+    def test_save_multiple_contact(self):
+        '''
+        test_save_multipe_contact to check multiple contact objects to our contact_list    
+        '''
+        self.new_contact.save_contact()
+
+        #Below we create a new contact object called test_contact and save it
+        test_contact = Contact("Test", "user", "0712345678", "test@user.com") #new contact
+
+        test_contact.save_contact()
+        self.assertEqual(len(Contact.contact_list), 2)
+
+        
 
 if __name__ == '__main__':
     unittest.main()
