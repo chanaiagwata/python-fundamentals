@@ -84,7 +84,12 @@ class TestContact(unittest.TestCase):
 
         contact_exists = Contact.contact_exist("0712345678")
         self.assertTrue(contact_exists)
-
+    
+    def test_display_all_contacts(self):
+        '''
+        method that returns a list of all contacts
+        '''
+        self.assertEqual(Contact.display_contacts(), Contact.contact_list)
 
 
         
