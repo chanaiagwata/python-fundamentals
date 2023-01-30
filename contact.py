@@ -55,3 +55,26 @@ class Contact:
         save_contact method that saves objects into contact_list
         '''
         Contact.contact_list.append(self)
+
+    def delete_contact(self):
+        '''
+        delete_contact method deletes a saved contact from contact list 
+        '''
+
+        Contact.contact_list.remove(self)
+    
+    @classmethod #classmethod informs python that this is a method that belongs to the entire class
+    
+    def find_by_number(cls,number): #cls refers to the entire class, we cannot use self because it only refers to a particular object 
+        '''
+        Method that takes in a number and returns a contact that matches that number
+        
+        Args:
+            number: phone number to search for
+        Returns :
+            Contact of person that matches the number
+        '''
+
+        for contact in cls.contact_list:
+            if contact.phone_number == number:
+                return contact
