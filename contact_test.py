@@ -4,9 +4,9 @@ import pyperclip
 
 class TestContact(unittest.TestCase):
     '''
-    Test class that defines test cases for the contact class behaviors
+    class to test functions in the Contact class module(behaviors we want to achieve)
     Args:
-    unittest.Testcase: TestCase class that helps in creating test cases
+    unittest.Testcase: class from unittest module to create unit tests
     '''
 
     #First thing we're testing is if our objects are being instantiated correctly
