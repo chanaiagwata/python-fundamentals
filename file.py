@@ -8,13 +8,22 @@
 # a - we can add items at the bottom of the file
 # r+ -file is on both read and write mode
 
-handle = open("test.txt", "r")
+# handle = open("test.txt", "w")
 
-data = handle.read()
-counter = 0
-for word in data.split():
-    if word == "Python":
-        counter += 1
+# data = handle.read()
+# counter = 0
+# for word in data.split():
+#     if word == "Python":
+#         counter += 1
 
 
-print(counter)
+# print(counter)
+
+# handle = open("text_write.txt", "w")
+
+# handle.write("Hello Chanai")
+# handle.close()
+
+with open("test.txt", "r") as handle:
+    data = handle.read()
+    print(data)
